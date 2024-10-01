@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="pro">
+        <header>
+            <nav class="nav-bar">
+                <div class="menu-icon desktop-view"> <em class="fas fa-bars"></em> </div>
+                <h3>VENIA</h3>
+                <ul class="tabs mob-view">
+                    <li class="active">Home</li>
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Smart Gear</li>
+                    <li>Accessories</li>
+                </ul>
+                <div class="add-to-cart"><em class="fas fa-shopping-cart"></em></div>
+            </nav>
+            <div class="top-bar">
+                <div class="mens-outerwear"><strong>Men's <br>Outerwear</strong></div>
+                <div class="image-container"> <img
+                        src="assets/images.jpeg"
+                        alt="Outerwear" /> </div>
+                <!-- <div><img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"/></div> -->
+            </div>
+            <div class="products">
+                <div class="filters"> <span>Clothing/ Womens/ Outerwear</span>
+                    <h3 class="filters-heading">Filters</h3>
+                    <div class="categories"> <span>Categories</span> <label> <input type="checkbox"
+                                value="men's clothing" class="filter-checkbox"> Men's Clothing </label> <label> <input
+                                type="checkbox" value="jewelery" class="filter-checkbox"> Jewelry </label> <label>
+                            <input type="checkbox" value="electronics" class="filter-checkbox"> Electronics </label>
+                        <label> <input type="checkbox" value="women's clothing" class="filter-checkbox"> Women's
+                            Clothing </label> </div>
+                </div>
+                <div class="mobileContainer">
+                    <div class="filters-headline"> <em class="fas fa-filter"></em> <a href="javascript:void(0)"
+                            class="filterResult" id="toggleFilterSidebar">Filter Results</a> </div>
+                    <div class="sidebar hidden" id="sidebar">
+                        <div class="display-flex menu-header">
+                            <h3>Filters</h3>
+                            <p id="closeMenu"><em class="fa fa-times"></em></p>
+                        </div> <a href="" class="clear">Clear all</a>
+                        <div class="categories-list"> <label> <input type="checkbox" value="men's clothing"
+                                    class="filter-checkbox"> Men's Clothing </label> <label> <input type="checkbox"
+                                    value="jewelery" class="filter-checkbox"> Jewelry </label> <label> <input
+                                    type="checkbox" value="electronics" class="filter-checkbox"> Electronics </label>
+                            <label> <input type="checkbox" value="women's clothing" class="filter-checkbox"> Women's
+                                Clothing </label> </div>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <div class="filter-bar">
+                        <p id="countResult"></p> <input type="text" id="search" placeholder="Search for products...">
+                        <select id="sort-options">
+                            <option value="default">Sort by Price</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                        </select>
+                    </div>
+                    <main id="product-list">
+                        <div id="loading" class="shimmer-container hidden">
+                            <div class="skeleton-image shimmer"></div>
+                            <div class="skeleton-title shimmer"></div>
+                            <div class="skeleton-description shimmer"></div>
+                            <div class="skeleton-description shimmer"></div>
+                        </div> <!-- Product items will be dynamically injected here -->
+                    </main> <button id="load-more">Load More</button>
+                    <div id="loading" class="hidden">Loading...</div>
+                    <div id="error" class="hidden">Something went wrong. Please try again.</div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <footer>
+        <div class="flex-container">
+            <div class="footer-content">
+                <p class="footer-heading"><b>Account</b></p> <a href="" class="text-muted">Sign In</a> <a href=""
+                    class="text-muted">Register</a> <a href="" class="text-muted">Order Status</a>
+            </div>
+            <div class="footer-content">
+                <p class="footer-heading"><b>About Us</b></p> <a href="" class="text-muted">Our stoty</a> <a href=""
+                    class="text-muted">Careers</a>
+            </div>
+            <div class="footer-content">
+                <p class="footer-heading"><b>Help</b></p> <a href="" class="text-muted">Contact us</a> <a href=""
+                    class="text-muted">Order Status</a> <a href="" class="text-muted">Return</a>
+            </div>
+            <div class="footer-content followus">
+                <p class="footer-heading"><b>Follow Us!</b></p>
+                <p class="text-muted"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium et fugiat
+                    veritatis. Error, quam dicta! </p> <span class="icons"> <a href="https://www.facebook.com"
+                        target="_blank"> <em class="fab fa-facebook-f"></em> </a> <a href="https://www.instagram.com"
+                        target="_blank"> <em class="fab fa-instagram"></em> </a> <a href="https://twitter.com"
+                        target="_blank"> <em class="fab fa-twitter"></em> </a> </span>
+            </div>
+        </div>
+        <div class="footer-bottom flex align-center container">
+            <div class="logo">VENIA</div>
+            <div class="footerCopyright">
+                <p class="text-muted"> &copy; 2024 Your Company. All Rights Reserved. </p>
+            </div>
+            <div class="footerPolicy"> <small><a href="">Terms of Use</a></small> <small><a href="">Privacy
+                        Policy</a></small> </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
